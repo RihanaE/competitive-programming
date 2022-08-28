@@ -1,0 +1,11 @@
+def Domino_piling(M,N):
+    store=[]
+    store.append(M)
+    store.append(N)
+    
+    total=store[0] * store[1]
+    result= total//2
+    
+    return result
+    
+    
