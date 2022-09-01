@@ -1,0 +1,11 @@
+def theatre_square(m,n,a):
+    if m%a!=0 or n%a!=0:
+        r1=int(m/a)+1
+        r2 = int(n/a)+1
+        result=r1*r2
+    else:
+        result=(m/a)*(n/a)
+        
+    return result
+    
+    
