@@ -1,0 +1,21 @@
+def countingSort(arr):
+    # Write your code here
+    max = None
+    for i in arr:
+        if max == None:
+            max = i
+        elif max < i:
+            max = i
+    store = []
+    for i in range(max + 1):
+        store.append(0)
+
+    for i in range(max + 1):
+        count = 0
+        if i in arr:
+            for j in arr:
+                if i == j:
+                    count += 1
+            store[i] = count
+            
+    return store
