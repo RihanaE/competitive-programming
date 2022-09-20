@@ -1,0 +1,17 @@
+def countingValleys(steps, path):
+    
+    
+    store=0
+    count=0
+
+    for i in range(steps):
+        if path[i] == "U":
+            store+=1
+
+        elif path[i] == "D":
+            store-=1
+
+        if store == 0 and  path[i] == "U":
+            count+=1
+
+    return count
