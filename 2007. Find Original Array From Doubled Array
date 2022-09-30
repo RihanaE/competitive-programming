@@ -1,0 +1,26 @@
+class Solution:
+    def findOriginalArray(self, changed: List[int]) -> List[int]:
+        index= len(changed) // 2
+        output=[]
+
+        if len(changed) % 2 != 0:
+            return []
+        
+        count= Counter(changed)
+        changed.sort()
+
+        for no in changed:
+            if no == 0 and count[no] >= 2:
+                count[no] -=2
+                output.append(no)
+
+            elif no > 0 and count[no] and count[no*2]:
+                count[no] -=1
+                count[no * 2] -=1
+                output.append(no)
+
+        if len(output) == index:
+            return output
+
+        else:
+            return [] 
