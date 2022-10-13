@@ -3,13 +3,25 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        output=nums[:]
-        l=len(nums)
-        i=0
+        k= k % len(nums)
         
-        while i < l:
-            nums[(i + k) % l] =output[i]
-            i +=1
+        l, r= 0, len(nums) - 1
+        
+        while l < r:
+            nums[l] , nums[r]= nums[r] , nums[l]
+            l +=1
+            r -=1
             
+        l, r= 0, k - 1
         
+        while l < r:
+            nums[l] , nums[r]= nums[r] , nums[l]
+            l +=1
+            r -=1
+            
+        l, r= k, len(nums) - 1
         
+        while l < r:
+            nums[l] , nums[r]= nums[r] , nums[l]
+            l +=1
+            r -=1
