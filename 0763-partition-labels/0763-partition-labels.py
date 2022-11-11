@@ -1,25 +1,27 @@
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
         d={}
-        stack=[]
-        
-        for i in range(len(s)):
-            d[s[i]]=i
+        for i, n in enumerate(s):
+            d[n]=i
             
-        i=0
-        size=0
+        l=0
         end=0
+        size=0
+        res=[]
         
-        while i < len(s):
-            size +=1
+        while l < len(s):
             
-            if d[s[i]] > end:
-                end = d[s[i]]
+            if end < d[s[l]]:
+                end=d[s[l]]
+                size +=1
                 
-            if end == i:
-                stack.append(size)
-                size =0
+            elif end >= d[s[l]]:
+                size +=1
                 
-            i +=1
+            if end == l:
+                res.append(size)
+                size=0
+                
+            l +=1
             
-        return stack
+        return res
