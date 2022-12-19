@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+a={}
+
+for i in range(n):
+    inp=input()
+    if inp not in a:
+        a[inp]=1
+        
+    else:
+        a[inp] +=1
+    
+print(len(a.keys()))
+
+for i,j in a.items():
+    print(j,end=" ")
+    
