@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+a=list(map(int,input().split()))
+s={}
+
+for i in a:
+    if i not in s:
+        s[i] =1
+    else:
+        s[i] +=1
+        
+for i, j in s.items():
+    if j < n:
+        print(i)
+        break
