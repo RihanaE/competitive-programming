@@ -1,0 +1,16 @@
+def swap_case(s):
+    a=""
+    
+    for i in s:
+        if ord("A") <= ord(i) <= ord("Z"):
+            a +=chr(ord(i) + 32)
+            
+        elif ord("a") <= ord(i) <= ord("z"):
+            a +=chr(ord(i) - 32)
+            
+        else:
+            a +=i
+            
+    return a
+
+if __name__ == '__main__':
