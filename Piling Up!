@@ -1,0 +1,25 @@
+def check(blocks, size):
+    l = 0
+    r = size - 1
+    current=float('inf')
+    while l <= r:
+        if blocks[l] <= blocks[r] <= current:
+            current=blocks[r]
+            r -=1
+            
+        elif blocks[r] < blocks[l] <= current:
+            current=blocks[l]
+            l +=1
+            
+        else:
+            return "No"
+            
+            
+    return "Yes"
+        
+
+
+for i in range(int(input())):
+    size = int(input())
+    blocks = list(map(int, input().split()))
+    print(check(blocks, size))
