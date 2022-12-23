@@ -1,0 +1,23 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+A=list(map(int,input().split()))
+
+def check(array1, array2):
+    if len(set(array1)) <= len(set(array2)):
+        return False
+        
+    elif set(array1).intersection(set(array2)) != set(array2):
+        return False
+        
+    else:
+        return True
+
+active=True
+for i in range(int(input())):
+    B=list(map(int,input().split()))
+    condition=check(A, B)
+    
+    if condition == False:
+        active=False
+        break
+        
+print(active)
