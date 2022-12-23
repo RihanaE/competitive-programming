@@ -1,24 +1,19 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        res = ""
-        j = 0
-        l = 1
-
+        length=len(strs[0])
+        len_array=len(strs)
+        pointer=1
         if len(strs) == 1:
             return strs[0]
-
-        while l <= len(strs[0]) + 1:
-            if strs[0][:l] == strs[j][:l]:
-                j += 1
-                if j == len(strs):
-                    res = strs[0][:l]
-                    l += 1
-                    j = 0
-
-            elif l > len(strs[0]):
-                return res
-
-            else:
-                return res
-
-        return res
+        
+        else:
+            s=""
+            while pointer <= length:
+                for i in range(1,len_array):
+                    if strs[0][:pointer] != strs[i][:pointer]:
+                        return s
+                    
+                s=strs[0][:pointer]        
+                pointer +=1
+                
+            return s
