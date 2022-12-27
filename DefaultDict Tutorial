@@ -1,0 +1,23 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+store=list(map(int,input().split()))
+numA,numB=store[0], store[1]
+arrayA={}
+arrayB=[]
+for i in range(numA):
+    temp=input()
+    if temp not in arrayA:
+        arrayA[temp]=[ i + 1]
+        
+    else:
+        arrayA[temp].append(i + 1)
+        
+for i in range(numB):
+    temp=input()
+    arrayB.append(temp)
+    
+for i in arrayB:
+    if i in arrayA.keys():
+        print(*arrayA[i])
+        
+    else:
+        print(-1)
