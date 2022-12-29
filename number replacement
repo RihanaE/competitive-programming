@@ -1,0 +1,23 @@
+for i in range(int(input())):
+    size=int(input())
+    array=list(map(int,input().split()))
+    string=input()
+    diction={}
+    active=True
+    
+    for indx,val in enumerate(string):
+        if array[indx] not in diction:
+            diction[array[indx]]=val
+            
+        else:
+            if val == diction[array[indx]]:
+                continue
+            else:
+                print("No")
+                active=False
+                break
+            
+                
+    if active == True:
+        print("Yes")
+    
