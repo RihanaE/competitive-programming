@@ -1,0 +1,30 @@
+from collections import Counter
+for i in range(int(input())):
+    words=input().split()
+    word1=Counter(words[0])
+    word2=Counter(words[1])
+
+    if "S" in words[0]:
+        word1["X"] *=-1
+        word1["X"] -=1
+
+    if "S" in words[1]:
+        word2["X"] *=-1
+        word2["X"] -=1
+
+    if "L" in words[0]:
+        word1["X"] *= 2
+        word1["X"] +=1
+
+    if "L" in words[1]:
+        word2["X"] *=2
+        word2["X"] +=1
+
+    if word1["X"] == word2["X"]:
+        print("=")
+
+    elif word1["X"] > word2["X"]:
+        print(">")
+
+    elif word1["X"] < word2["X"]:
+        print("<")
