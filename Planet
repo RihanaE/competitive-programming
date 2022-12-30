@@ -1,0 +1,18 @@
+from collections import Counter
+
+for i in range(int(input())):
+    numbers = list(map(int, input().split()))
+    number_of_planets=numbers[0]
+    second_machine_cost=numbers[1]
+    packed = list(map(int, input().split()))
+    diction=Counter(packed)
+    cost=0
+
+    for orbit, amount in diction.items():
+        if amount < second_machine_cost:
+            cost +=amount
+
+        else:
+            cost += second_machine_cost
+
+    print(cost)
