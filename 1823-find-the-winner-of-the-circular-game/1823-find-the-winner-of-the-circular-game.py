@@ -1,22 +1,10 @@
 class Solution:
     def findTheWinner(self, n: int, k: int) -> int:
-        stack=[]
-        for i in range(1, n + 1):
-            stack.append(i)
+        array=[i + 1 for i in range(n)]
+        i = 0
         
-        self.l=0
-        
-       
+        while len(array) > 1:
+            i = (i + k - 1) % len(array)
+            array.remove(array[i])
             
-        def winner(stack,k,l):
-            if len(stack) == 1:
-                return stack [0]
-            else:
-                self.l=(self.l + k - 1) % len(stack)
-                stack.remove(stack[self.l])
-                return winner(stack,k,self.l)
-        
-        if len(stack) == 1:
-            return stack [0]
-        else:
-            return winner(stack,k,self.l)
+        return array[0]
