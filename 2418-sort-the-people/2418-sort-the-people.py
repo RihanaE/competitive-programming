@@ -1,15 +1,19 @@
 class Solution:
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
-        flag = False
-        
-        for j in range(len(names)):
-            for i in range(len(names) - 2 , -1,-1):
-                if heights[i + 1] > heights[i]:
-                    heights[i], heights[i + 1] = heights[i + 1], heights[i]
-                    names[i], names[i + 1] = names[i + 1], names[i]
-                    flag = True
+        for i in range(len(names)):
+            num = heights[i]
+            key = i
+             
+            for j in range(i + 1, len(names)):
+                if heights[j] > num:
+                    num = heights[j]
+                    key = j
                     
-            if flag == False:
-                break
-                
+            names[i], names[key] = names[key] , names[i]
+            heights[i], heights[key] = heights[key] ,heights[i]
+            
+            
         return names
+            
+                    
+            
