@@ -3,20 +3,21 @@
 class Solution: 
     def select(self, arr, i):
         # code here 
-        self.i=len(self.arr)
-    
+        self.selectionSort(arr,len(arr))
+        
+           
     def selectionSort(self, arr,n):
-        
         #code here
-        
-        for k in range(n) :
-            min=k
-            for j in range(k+1, n):
-                if arr[min] > arr[j]:
-                    min=j
-
-            arr[min],arr[k]=arr[k],arr[min]
-
+        for i in range(n):
+            num = arr[i]
+            key = i
+            for j in range(i + 1, n):
+                if num > arr[j]:
+                    num = arr[j]
+                    key = j
+                    
+            arr[i] ,arr[key] = arr[key], arr[i]
+            
         return arr
 
 
