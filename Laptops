@@ -1,0 +1,17 @@
+length = int(input())
+arr = []
+for i in range(length):
+    arr.append(list(map(int,input().split())))
+
+
+arr.sort()
+
+for i in range(1, length):
+    if arr[i - 1][1] > arr[i][1]:
+        print("Happy Alex")
+        status = True
+        break
+
+
+else:
+    print("Poor Alex")
