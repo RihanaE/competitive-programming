@@ -1,0 +1,15 @@
+class Solution:
+    def arraySortedOrNot(self, arr, n):
+        # code here
+        left_pointer = 0
+        right_pointer = 1
+        
+        while right_pointer < n:
+            if arr[left_pointer] > arr[right_pointer]:
+                return 0
+                
+            left_pointer += 1
+            right_pointer += 1
+            
+        else:
+            return 1
