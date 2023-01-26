@@ -3,27 +3,22 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        l=m - 1
-        r=n - 1
-        c=len(nums1) - 1
+        pointer_first = m - 1
+        pointer_second = n - 1
+        main = m + n - 1
         
-        while l >= 0 and r >= 0:
-            if nums1[l] >= nums2[r]:
-                nums1[c]= nums1[l]
-                l -=1
-                c -=1
+        while pointer_first >= 0 and pointer_second >= 0:
+            if nums1[pointer_first] >= nums2[pointer_second]:
+                nums1[main] = nums1[pointer_first]
+                main -=1
+                pointer_first -= 1
                 
             else:
-                nums1[c]=nums2[r]
-                r -=1
-                c -=1
+                nums1[main] = nums2[pointer_second]
+                pointer_second -= 1
+                main -= 1
                 
-        while l >=0:
-            nums1[c]= nums1[l]
-            l -=1
-            c -=1
-            
-        while r >=0:
-            nums1[c]= nums2[r]
-            r -=1
-            c -=1
+        while pointer_second >= 0:
+            nums1[main] = nums2[pointer_second]
+            main -= 1
+            pointer_second -= 1
