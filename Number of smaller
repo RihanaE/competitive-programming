@@ -1,0 +1,18 @@
+lengths = list(map(int,input().split()))
+first_arr = list(map(int,input().split()))
+second_arr = list(map(int,input().split()))
+first_pointer = 0
+second_pointer = 0
+count = 0
+output = []
+
+while second_pointer < lengths[1]:
+    if first_pointer < lengths[0] and first_arr[first_pointer] < second_arr[second_pointer]:
+        count +=1
+        first_pointer += 1
+
+    else:
+        output.append(count)
+        second_pointer += 1
+
+print(*output)
