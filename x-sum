@@ -1,0 +1,42 @@
+store = {}
+store1 = {}
+
+matrix = []
+length = int(input())
+for num in range(length):
+    n,m= map(int,input().split())
+    for i in range(int(n)):
+
+        matrix.append(list(map(int,input().split())))
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if i + j in store.keys():
+                store[i + j] += matrix[i][j]
+
+            else:
+                store[i + j] = matrix[i][j]
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if j - i in store1.keys():
+                store1[j - i] += matrix[i][j]
+
+            else:
+                store1[j - i] = matrix[i][j]
+
+    answer = 0
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            diff = store1[j - i]
+            sums = store[j+i]
+            answer = max(answer, diff + sums- matrix[i][j])
+
+
+    
+
+    print(answer)
+    matrix = []
+    store = {}
+    store1 = {}
