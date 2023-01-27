@@ -1,13 +1,38 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        l, r=0,1
+        left_pointer = 0
+        right_pointer = 1
+        count = 0
         
-        while r < len(nums):
-            if nums[r] == nums[l]:
-                del nums[r]
+        while right_pointer < len(nums):
+            if nums[left_pointer] == nums[right_pointer]:
+                nums[left_pointer] = 101
+                left_pointer += 1
+                right_pointer += 1
                 
             else:
-                r+=1
-                l+=1
+                left_pointer += 1
+                right_pointer += 1
                 
-        return len(nums)
+        left_pointer = 0
+        right_pointer = 1
+        
+        while right_pointer < len(nums):
+            if nums[left_pointer] == 101 and nums[right_pointer] != 101:
+                nums[left_pointer], nums[right_pointer] = nums[right_pointer], nums[left_pointer]
+                
+            elif nums[right_pointer] == 101:
+                right_pointer += 1
+                
+            elif left_pointer < right_pointer - 1 and nums[left_pointer] != 101:
+                left_pointer += 1
+                
+                
+            else:
+                right_pointer += 1
+                
+                
+        for i in nums:
+            if i != 101:
+                count += 1
+        return count
