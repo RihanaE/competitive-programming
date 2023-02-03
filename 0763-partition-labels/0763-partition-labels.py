@@ -1,27 +1,32 @@
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
-        d={}
-        for i, n in enumerate(s):
-            d[n]=i
-            
-        l=0
-        end=0
-        size=0
-        res=[]
+        store = {}
+        res = []
         
-        while l < len(s):
+        for ind, val in enumerate(s):
+            store[val] = ind
             
-            if end < d[s[l]]:
-                end=d[s[l]]
-                size +=1
+        left_pointer = 0
+        right_pointer = store[s[0]]
+        start = 0
+        
+        while right_pointer < len(s) and left_pointer < len(s):
+            if store[s[left_pointer]] <= right_pointer and left_pointer == right_pointer:
+                res.append(right_pointer - start + 1)
+                if left_pointer < len(s) - 1:
+                    right_pointer = store[s[left_pointer + 1]]
+                    start = left_pointer + 1
+                    
+                left_pointer += 1
                 
-            elif end >= d[s[l]]:
-                size +=1
-                
-            if end == l:
-                res.append(size)
-                size=0
-                
-            l +=1
+             
             
+            elif store[s[left_pointer]] <= right_pointer and left_pointer < right_pointer:
+                left_pointer += 1
+                
+            else:
+                right_pointer = store[s[left_pointer]]
+                left_pointer += 1
+                
+                
         return res
