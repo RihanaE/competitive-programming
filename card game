@@ -1,0 +1,29 @@
+length = int(input())
+store = list(map(int,input().split()))
+
+left_pointer = 0
+right_pointer = length - 1
+wube = 0
+hen = 0
+
+for i in range(length):
+    if i % 2 == 0:
+        if store[left_pointer] >= store[right_pointer]:
+            wube += store[left_pointer]
+            left_pointer += 1
+
+        else:
+            wube += store[right_pointer]
+            right_pointer -= 1
+
+    else:
+        if store[left_pointer] >= store[right_pointer]:
+            hen += store[left_pointer]
+            left_pointer += 1
+
+        else:
+            hen += store[right_pointer]
+            right_pointer -= 1
+
+
+print(wube, hen )
