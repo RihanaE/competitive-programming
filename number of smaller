@@ -1,0 +1,20 @@
+num = list(map(int, input().split()))
+store1 = list(map(int, input().split()))
+store2 = list(map(int, input().split()))
+ 
+pointer1 = 0
+pointer2 = 0
+count = 0
+res = []
+ 
+while pointer2 < len(store2):
+    if pointer1 < num[0] and store1[pointer1] < store2[pointer2]:
+        count += 1
+        pointer1 += 1
+ 
+    else:
+        res.append(count)
+        pointer2 += 1
+ 
+ 
+print(*res)
