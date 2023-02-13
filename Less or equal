@@ -1,0 +1,28 @@
+store = list(map(int, input().split()))
+numbers = list(map(int, input().split()))
+ 
+if store[1] > store[0]:
+    print(-1)
+ 
+elif store[1] == 0:
+    if min(numbers) - 1 > 0:
+        print(min(numbers) - 1)
+ 
+    else:
+        print(-1)
+ 
+else:
+    numbers.sort()
+    value = numbers[store[1] - 1]
+    count = 0
+ 
+    for i in range(store[0]):
+        if numbers[i] <= value:
+            count += 1
+ 
+    if count == store[1]:
+        print(value)
+ 
+ 
+    else:
+        print(-1)
