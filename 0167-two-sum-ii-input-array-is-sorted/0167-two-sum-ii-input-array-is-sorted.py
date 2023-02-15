@@ -7,10 +7,8 @@ class Solution:
             if num[left_pointer] + num[right_pointer] == target:
                 return [left_pointer + 1, right_pointer + 1]
             
-            elif num[left_pointer] + num[right_pointer] < target:
-                left_pointer += 1
-                
             elif num[left_pointer] + num[right_pointer] > target:
                 right_pointer -= 1
                 
-        
+            elif num[left_pointer] + num[right_pointer] < target:
+                left_pointer += 1
