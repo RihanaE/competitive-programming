@@ -1,9 +1,9 @@
 class Solution:
-    def rotate(self, nums: List[int], k: int) -> None:
+    def rotate(self, nums: List[int], n: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
-        k=k % len(nums)
+        k=n % len(nums)
         l=0
         r=len(nums) - k - 1
         
