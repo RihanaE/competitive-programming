@@ -2,38 +2,43 @@ class Solution:
     def compress(self, chars: List[str]) -> int:
         l = 0
         r = 0
-        res = 0
-        s = []
-
-        while r <= len(chars):
-            if s == []:
-                s.append(chars[r])
+        count = 0
+        index = 0
+        
+        
+        while r < len(chars):
+            if chars[l] == chars[r]:
+                count += 1
                 r += 1
-                res += 1
-
-            elif r < len(chars) and chars[l] == chars[r]:
-                res += 1
-                l += 1
-                r += 1
-
-            else:
-                if 1 < res < 10:
-                    s.append(str(res))
+                
+            elif chars[l] != chars[r]:
+                if count == 1:
+                    chars[index] = chars[l]
+                    index += 1
+                    count = 0
                     
-                elif res >= 10:
-                    temp=str(res)
-                    for i in temp:
-                        s.append(i)
-                        
-                res = 0
-                if r < len(chars):
-                    s.append(chars[r])
-                res +=1
-                l += 1
-                r += 1
-
-        for i in range(len(s)):
-            chars[i]=s[i]
+                else:
+                    chars[index] = chars[l]
+                    index += 1
+                
+                    for i in str(count):
+                        chars[index] = i
+                        index += 1
+                    
+                    count = 0
+                    
+                    
+                l = r
+                
+                
         
-        
-        return len(s)
+        chars[index] = chars[l]
+        index += 1
+        if count > 1:
+            for i in str(count):
+                chars[index] = i
+                index += 1
+    
+           
+            
+        return index
