@@ -1,0 +1,48 @@
+lengths = list(map(int, input().split()))
+store = []
+
+
+for i in range(lengths[0]):
+    store.append(input())
+
+def row_check(grid):
+
+    res = set()
+    for i in range(len(grid[0])):
+        temp = []
+        for j in range(len(grid)):
+            if grid[j][i] in temp:
+                res.add((j, i))
+                res.add((temp.index(grid[j][i]), i))
+
+            temp.append(grid[j][i])
+
+    return res
+
+def col_check(grid):
+    res = set()
+
+    for i in range(len(grid)):
+        temp = []
+
+        for j in range(len(grid[0])):
+            if grid[i][j] in temp:
+                res.add((i, j))
+                res.add((i, temp.index(grid[i][j])))
+
+            temp.append(grid[i][j])
+
+    return res
+
+row = row_check(store)
+col = col_check(store)
+output = []
+
+for i in range(lengths[0]):
+    for j in range(lengths[1]):
+        if (i, j) in row or (i, j) in col:
+            pass
+        else:
+            output.append(store[i][j])
+
+print("".join(output))
