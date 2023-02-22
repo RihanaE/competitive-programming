@@ -1,48 +1,26 @@
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
-        dp = {}
-        stack = []
-        for i in p:
-            if i not in dp.keys():
-                dp[i] = 1
-
-            else:
-                dp[i] += 1
-
-        l, r = 0, 0
-        ds = {}
-        while r <= len(s):
-            if r < len(s) and r - l < len(p):
-                if s[r] not in ds.keys():
-                    ds[s[r]] = 1
-
-                else:
-                    ds[s[r]] += 1
-
-                r += 1
-
-            elif r - l == len(p):
-                if ds == dp:
-                    stack.append(l)
-                    if ds[s[l]] == 1:
-                        del ds[s[l]]
-
-                    else:
-                        ds[s[l]] -= 1
-
-                    l += 1
-
-                   
-                else:
-                    if ds[s[l]] == 1:
-                        del ds[s[l]]
-
-                    else:
-                        ds[s[l]] -= 1
-
-                    l += 1
-                   
-            else:
-                r +=1
+        length = len(p) - 1
+        pdict = Counter(p)
+        temp = {}
+        left = 0
+        res = []
+    
+        for right in range(len(s)):
+            if s[right] in temp:
+                temp[s[right]] += 1
                 
-        return stack
+            else:
+                temp[s[right]] = 1
+                
+            if right - left == length:
+                if temp == pdict:
+                    res.append(left)
+                    
+                temp[s[left]] -= 1
+                if temp[s[left]] == 0:
+                    del(temp[s[left]])
+                    
+                left += 1
+                
+        return res
