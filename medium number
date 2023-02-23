@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    store = list(map(int,input().split()))
+    store.sort()
+    print(store[1])
