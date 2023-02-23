@@ -1,23 +1,20 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        d={0 : 1}
-        l=0
-        res=0
-        s=0
+        pre = [0]
+        res = 0
+        for i in nums:
+            pre.append(pre[-1] + i)
+            
+        store = {}
         
-        while l < len(nums):
-            s +=nums[l]
-            
-            if s - k in d:
-                res +=d[s - k]
+        for i in pre:
+            if i - k in store:
+                res += store[i - k]
                 
-            if s in d:
-                d[s] +=1
+            if i in store:
+                store[i] += 1
+                
             else:
-                d[s] =1
+                store[i] = 1
                 
-            
-                
-            l+=1
-            
         return res
