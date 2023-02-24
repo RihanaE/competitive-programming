@@ -6,14 +6,14 @@ class MyQueue:
 
     def push(self, x: int) -> None:
         self.stack.append(x)
-        # self.stack_2.append(x)
        
-
     def pop(self) -> int:
-        if self.stack:
-            return self.stack.pop(0)
-           
-        
+        while self.stack:
+            self.stack_2.append(self.stack.pop())
+        temp = self.stack_2.pop()
+        while self.stack_2:
+            self.stack.append(self.stack_2.pop())
+        return temp
     def peek(self) -> int:
         if self.stack:
             return self.stack[0]
