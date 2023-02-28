@@ -1,21 +1,30 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        d={}
-        res=0
+        store = {}
+        left_pointer = 0
+        right_pointer = 0
+        res = 0
         
-        l=0
-        
-        for r in range(len(s)):
-            if s[r] not in d:
-                d[s[r]]=1
+        while right_pointer < len(s):
+            
+            if s[right_pointer] in store:
+                store[s[right_pointer]] += 1
                 
             else:
-                d[s[r]] +=1
-                
-            while (r - l + 1) - max(d.values()) > k:
-                d[s[l]] -=1
-                l +=1
-                
-            res=max(res, r - l + 1)
+                store[s[right_pointer]] = 1
             
+                
+            if right_pointer - left_pointer + 1 - k <= max(store.values()):
+                
+
+                res = max(res, right_pointer - left_pointer + 1)
+                right_pointer += 1
+                
+            else:
+                store[s[left_pointer]] -= 1
+                left_pointer += 1
+                res = max(res, right_pointer - left_pointer + 1)
+                right_pointer += 1
+                
+                
         return res
