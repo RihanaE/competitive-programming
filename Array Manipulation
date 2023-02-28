@@ -1,0 +1,14 @@
+def arrayManipulation(n, queries):
+    # Write your code here
+    arr = [0] * n
+    
+    for i in range(len(queries)):
+        arr[queries[i][0] - 1] += queries[i][2]
+        
+        if queries[i][1] < len(arr):
+            arr[queries[i][1]] -= queries[i][2]
+        
+    for i in range(1, n):
+        arr[i] += arr[i - 1]
+        
+    return max(arr)
