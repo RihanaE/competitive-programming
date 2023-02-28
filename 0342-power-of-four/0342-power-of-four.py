@@ -3,7 +3,7 @@ class Solution:
         if n < 1:
             return False
         
-        elif n == float(1):
+        elif n == 1:
             return True
         
         else:
