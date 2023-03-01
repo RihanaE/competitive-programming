@@ -1,14 +1,16 @@
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
+    def reverseString(self,  s ,c = 0) :
         """
         Do not return anything, modify s in-place instead.
         """
-        left_pointer = 0
-        right_pointer = len(s) - 1
+        left_pointer = 0 + c
+        right_pointer = len(s) - 1 - c
         
-        while left_pointer <= right_pointer:
-            temp = s[right_pointer]
-            s[right_pointer] = s[left_pointer]
-            s[left_pointer] = temp
-            left_pointer += 1
-            right_pointer -= 1
+        if left_pointer >= right_pointer:
+            return s
+        
+        else:
+            
+            s[left_pointer], s[right_pointer] = s[right_pointer], s[left_pointer]
+            
+            return self.reverseString( s , c + 1)
