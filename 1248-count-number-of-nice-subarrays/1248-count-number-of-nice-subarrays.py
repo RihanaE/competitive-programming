@@ -1,29 +1,27 @@
 class Solution:
     def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+        store = {0 : 1}
+        res = 0
+        
         for i in range(len(nums)):
             if nums[i] % 2 == 0:
-                nums[i] =0
+                nums[i] = 0
                 
             else:
-                nums[i]=1
+                nums[i] = 1
                 
-        s=0
-        l=0
-        res=0
-        d={0 : 1}
-        
-        while l < len(nums):
-            s +=nums[l]
+        for i in range(1 , len(nums)):
+            nums[i] += nums[i - 1]
             
-            if s - k in d.keys():
-                res +=d[s - k]
+        for i in nums:
+            if i - k in store:
+                res += store[i - k]
                 
-            if s in d.keys():
-                d[s] +=1
+            if i in store:
+                store[i] += 1
                 
             else:
-                d[s]=1
+                store[i] = 1
                 
-            l +=1
-            
         return res
+        
