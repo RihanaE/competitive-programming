@@ -1,35 +1,42 @@
 class Solution:
     def simplifyPath(self, path: str) -> str:
-        stack=[]
-        path= path + "/"
-        res="/"
-        s=""
-        i=0
+        stack = []
+        pointer = 0
+        temp = []
         
-        while i < len(path):
-            
-            if path[i] == "/":
-                if s == ".." and stack:
-                    stack.pop()
-                    s=""
+        while pointer < len(path):
+            if path[pointer] == "/":
+                if temp == [".", "."]:
+                    if stack:
+                        stack.pop()
                     
-                elif s == "..":
-                    s= ""
+                    temp = []
                     
+                elif temp == ["."]:
+                    temp = []
                     
-                elif s == ".":
-                    s=""
+                else:
+                    if temp != []:
+                        stack.append("".join(temp))
+                        
+                    temp = []
                 
-                elif s != "":
-                    stack.append(s)
-                    s=""
+                pointer += 1
                 
-
             else:
-                s +=path[i]
+                temp.append(path[pointer])
+                pointer += 1
                 
-                
-            i +=1
-                
-        res += "/".join(stack)
-        return res
+        if temp == [".", "."]:
+            if stack:
+                stack.pop()
+                    
+            temp = []
+                    
+        elif temp == ["."]:
+            temp = []
+                    
+        if temp:
+            stack.append("".join(temp))
+            
+        return "/" + "/".join(stack)
