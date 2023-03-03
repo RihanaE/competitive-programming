@@ -5,7 +5,7 @@ class Solution:
     def firstBadVersion(self, n: int) -> int:
         l = 1
         r = n
-        store = []
+        store = 0
         
         
         while l <= r:
@@ -17,6 +17,6 @@ class Solution:
                 
             else:
                 r = mid - 1
-                store.append(mid)
+                store = mid
                 
-        return store[-1]
+        return store
