@@ -1,20 +1,25 @@
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
-        stack=[]
-        fleet=[]
-        
+        stack = []
         for i in range(len(position)):
-            fleet.append([position[i], (target - position[i]) / speed[i]])
+            rem_speed = (target - position[i]) / speed[i]
+            stack.append([position[i] , rem_speed])
             
-        fleet.sort(key=lambda k:k[0], reverse=True)
+        res = []
+        count = 0
+        stack.sort(reverse = True)
+        stack1 = []
         
-        for i in fleet:
-            if stack == []:
-                stack.append(i)
+        for i, j in stack:
+            if not stack1:
+                stack1.append([i, j])
+                count += 1
                 
-            elif stack[-1][1] >= i[1]:
-                pass
+            elif stack1[-1][1] >= j:
+                continue
+                
             else:
-                stack.append(i)
+                stack1.append([i, j])
+                count += 1
                 
-        return len(stack)
+        return count
