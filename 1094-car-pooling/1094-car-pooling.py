@@ -1,22 +1,20 @@
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
-        trips.sort(key=lambda k: k[1])
-        stack=[]
+        mx = 0
+        for i in range(len(trips)):
+            mx = max(mx, trips[i][2])
+            
+        res = [0] * (mx + 1)
         
-        for no,fro,to in trips:
-            stack.append((fro,no))
-            stack.append((to,-no))
-        
-        stack.sort()
-        num=0
-        l=0
-        
-        while l < len(stack):
-            num +=stack[l][1]
-            if num > capacity:
+        for numpass, frm, to in trips:
+            res[frm] += numpass
+            
+            if to < len(res):
+                res[to] -= numpass
+                
+        for i in range(1, len(res)):
+            res[i] += res[i - 1]
+            if res[i - 1] > capacity or res[i] > capacity:
                 return False
             
-            l +=1
-            
         return True
-    
