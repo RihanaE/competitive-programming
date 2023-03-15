@@ -5,19 +5,29 @@
 #         self.next = next
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        return self.helper(head)
+        # return head÷
         
-        dummy=ListNode(0, head)
-        pre,cur=dummy, head
-
-        while cur and cur.next:
-            temp1=cur.next.next
-            temp2=cur.next
-
-            temp2.next=cur
-            cur.next=temp1
-            pre.next=temp2
-
-            pre=cur
-            cur=temp1
-
-        return dummy.next
+    def helper(self, tracker):
+        curr = tracker
+        if tracker == None:
+            return
+        
+        elif tracker and not tracker.next:
+            return tracker
+        
+        else:
+            pre = curr
+            temp = curr.next.next
+            curr = curr.next
+            curr.next = pre
+            
+            curr.next.next = self.helper(temp)
+            
+            # curr.next.next = curr
+            # curr.next = temp
+            
+            
+            
+            return curr
+            
