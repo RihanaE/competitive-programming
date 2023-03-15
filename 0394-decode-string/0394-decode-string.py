@@ -1,33 +1,68 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        stack=[]
-        no="0123456789"
-        l=0
-        res=""
-        num=""
-        while l < len(s):
-            if s[l] != "]":
-                stack.append(s[l])
-                l +=1
+        return self.helper(s, 0)
+        
+    def helper(self, s, pointer):
+        if pointer == len(s):
+            return ""
+        
+        else:
+            n = 0
+            store = ""
+            while pointer != len(s):
+                if s[pointer].isdigit():
+                    n = (n * 10) + int(s[pointer])
+                    pointer += 1
+
+                elif s[pointer] == "[":
+                    if n != 0:
+                        store, pointer = store + n * self.helper(s, pointer + 1)[0], self.helper(s, pointer + 1)[1] 
+                        n = 0
+                        
+
+                    else:
+                        store, pointer = store + self.helper(s, pointer + 1)[0], self.helper(s, pointer + 1)[1] 
+                        
+
+                elif s[pointer] == "]":
+                    pointer += 1
+                    return store, pointer
+
+                else:
+                    store += s[pointer]
+                    pointer += 1
                 
-            elif s[l] == "]":
-                while stack[-1] != "[":
-                    res +=stack.pop()
-                    
-                stack.pop()
-                res=res[::-1]
+            return store
+        
+#         left = 0
+#         right = 0
+#         string_ = ""
+        
+        
+        
+#         for i , ch in enumerate (s):
+#             if ch == "[" :
+#                 left = i
+#                 string_ = ""
                 
-                while stack and stack[-1] in no:
-                    num +=stack.pop()
-                    
-                num=num[::-1]
-                out=int(num) * res
+#             elif ch == "]":
+#                 right = i
+#                 break
                 
-                for i in out:
-                    stack.append(i)
-                    
-                res=""
-                num=""
-                l +=1
+#             else:
+#                 string_ += ch
                 
-        return "".join(stack)
+                
+                
+                
+#         j = left - 1
+#         num = ""
+        
+#         while s[j].isdigit() and j > -1:
+#             num = s[j] + num
+#             j -=1
+            
+        
+#         string_ =s [: j + 1] + int(num) * string_ + s[right + 1:]
+        
+#         return self.decodeString(string_)
