@@ -1,8 +1,6 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
-        candidates.sort()
-        
         def helper(target, lst, idx):
             if target < 0:
                 return
@@ -17,5 +15,6 @@ class Solution:
                 
             
             
-        helper(target,[], 0)
+        helper(target,[],0)
+        
         return res
