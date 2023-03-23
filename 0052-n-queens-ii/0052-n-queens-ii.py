@@ -8,7 +8,6 @@ class Solution:
             
             if row >= n:
                 count += 1
-                print(count)
                 return
 
             for i in range(n):
