@@ -5,23 +5,64 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        s1=""
-        s2=""
-        d=dummy=ListNode()
+        cur1 = l1
+        cur2 = l2
+        dummy = ListNode()
+        template = dummy
+        remain = 0
         
-        while l1:
-            s1=str(l1.val) + s1
-            l1=l1.next
+        while cur1 and cur2:
+            temp = cur1.val + cur2.val
+            if temp + remain >= 10:
+                print(dummy.next, remain)
+                value = (temp + remain) % 10
+                remain = 1
+                
+            else:
+                value = temp % 10 + remain
+                remain = 0
+                
+            template.next = ListNode(value)
+            template = template.next
+            cur1 = cur1.next
+            cur2 = cur2.next
             
-        while l2:
-            s2= str(l2.val) + s2
-            l2= l2.next
+#             if temp % 10 != 0:
+#                 remain = 1
+                
+#             else:
+#                 remain = 0
+                
+        while cur1:
+            temp = cur1.val
+            if temp + remain >= 10:
+                value = (temp + remain) % 10
+                remain = 1
+                
+            else:
+                value = temp % 10 + remain
+                remain = 0
+                
+            template.next = ListNode(value)
+            template = template.next
+            cur1 = cur1.next
             
-        sum_=int(s1) + int (s2)
-        sum_s=str(sum_)
-        
-        for i in sum_s[::-1]:
-            d.next=ListNode(int(i))
-            d=d.next
+        while cur2:
+            temp = cur2.val
+            if temp + remain >= 10:
+                value = (temp % 10 + remain) % 10
+                remain = 1
+                
+            else:
+                value = temp % 10 + remain
+                remain = 0
+                
+            template.next = ListNode(value)
+            template = template.next
+            cur2 = cur2.next
+            
+        if remain != 0:
+            template.next = ListNode(remain)
             
         return dummy.next
+            
