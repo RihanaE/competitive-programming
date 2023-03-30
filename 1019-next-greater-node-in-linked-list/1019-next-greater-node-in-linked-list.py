@@ -5,29 +5,33 @@
 #         self.next = next
 class Solution:
     def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:
-        store=[]
-        current=head
-        indx=0
+        curr = head
+        size = 0
         
-        while current:
-            store.append([indx,current.val])
-            current=current.next
-            indx +=1
+        while curr:
+            size += 1
+            curr = curr.next
             
-        res=[0] * len(store)
-        stack=[]
-        l=0
+        res = [0] * size
+        stack = []
+        pointer = 0
         
-        while l < len(store):
-            if stack == []:
-                stack.append(store[l])
-                l +=1
+        while head:
+            if not stack:
+                stack.append([head.val, pointer])
                 
-            elif store[l][1] > stack[-1][1]:
-                res[stack[-1][0]]=store[l][1]
-                stack.pop()
+            elif stack[-1][0] >= head.val:
+                stack.append([head.val, pointer])
+                
+            
             else:
-                stack.append(store[l])
-                l +=1
+                while stack and stack[-1][0] < head.val:
+                    res[stack[-1][1]] = head.val
+                    stack.pop()
+                    
+                stack.append([head.val, pointer])
                 
+            pointer += 1
+            head = head.next
+            
         return res
