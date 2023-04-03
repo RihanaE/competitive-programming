@@ -1,0 +1,18 @@
+length = int(input())
+arr = list(map(int, input().split()))
+ev_count = 0
+od_count = 0
+
+for i in arr:
+    if i % 2 == 0:
+        ev_count += 1
+
+    else:
+        od_count += 1
+
+if not ev_count or not od_count:
+    print(*arr)
+
+else:
+    arr.sort()
+    print(*arr)
