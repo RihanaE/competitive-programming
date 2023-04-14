@@ -1,0 +1,43 @@
+from collections import defaultdict
+
+length = int(input())
+mat = []
+for i in range(length):
+    arr = list(map(int, input().split()))
+    mat.append(arr)
+
+sr = set()
+si = set()
+for row in range(1, length + 1):
+    flag = False
+    for col in range(1, length + 1):
+        
+        if mat[row - 1][col - 1] == 1:
+            
+            sr.add(row)
+            si.add(col)
+            
+
+source = []
+sink = []
+for i in range(1, length + 1):
+    if i not in sr and i not in si:
+        source.append(i)
+        sink.append(i)
+
+        
+for i in sr:
+    if i not in si:
+        source.append(i)
+
+for i in si:
+    if i not in sr:
+        sink.append(i)
+
+
+
+source.sort()
+sink.sort()
+
+print(len(source), *source)
+print(len(sink), *sink)
