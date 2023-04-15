@@ -1,0 +1,20 @@
+from collections import defaultdict
+
+length = int(input())
+store = []
+
+for i in range(int(input())):
+    value = list(map(int, input().split()))
+    store.append(value)
+
+graph = defaultdict(list)
+sr = set()
+
+for i in store:
+    if i[0] == 1:
+        graph[i[1]].append(i[2])
+        graph[i[2]].append(i[1])
+        
+
+    elif i[0] == 2:
+        print(*graph[i[1]])
