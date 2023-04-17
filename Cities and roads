@@ -1,0 +1,15 @@
+count = 0
+length = int(input())
+store = []
+
+for i in range(length):
+    value = list(map(int, input().split()))
+    store.append(value)
+
+for row in range(len(store)):
+    for col in range(len(store[0])):
+        if store[row][col] == 1:
+            count += 1
+            store[col][row] = 0
+
+print(count)
