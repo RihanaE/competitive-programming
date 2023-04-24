@@ -1,0 +1,26 @@
+for i in range(int(input())):
+    num = int(input())
+    length = len(bin(num))
+    bit = bin(num)
+    offset = 0
+    flag = False
+    first_0 = float('inf')
+    first_1 = 0
+
+    for i in range(length - 1, 1, -1):
+        if bit[i] == "1":
+            first_1 = offset
+            offset += 1
+            break
+
+        first_0 = min(first_0, offset)
+        offset += 1
+
+    first_0 = min(first_0, offset)
+    
+    val = 2 ** (first_1)
+    if val ^ num > 0:
+        print(val)
+
+    else:
+        print(2**(first_1) + 2 ** (first_0))
