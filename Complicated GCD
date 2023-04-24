@@ -1,0 +1,26 @@
+a, b = list(map(int, input().split()))
+flag = False
+
+def gcd(a, b):
+    if b == 0:
+        return a
+
+    return gcd(b, a % b)
+
+val = gcd(a, b)
+if val == 1:
+    flag = True
+    print(1)
+
+if not flag:
+    for i in range(a + 1, b):
+        if val > i:
+            val = gcd(val, i)
+
+        else:
+            val = gcd(i, val)
+
+        if val == 1:
+            break
+
+    print(val)
