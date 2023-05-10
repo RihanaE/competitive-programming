@@ -5,8 +5,8 @@ class Solution:
         visited = set()
         
         for pre, next_ in prerequisites:
-            store[pre].append(next_)
-            weight[next_] += 1
+            store[next_].append(pre)
+            weight[pre] += 1
             
         queue = deque()
         
