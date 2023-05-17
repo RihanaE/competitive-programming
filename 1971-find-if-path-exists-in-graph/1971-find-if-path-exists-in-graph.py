@@ -1,34 +1,45 @@
 class Solution:
     def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
-        store = {}
+        store, height = self.initialize(n)
         
-        for i in range(len(edges)):
-            if edges[i][0] in store:
-                store[edges[i][0]].append(edges[i][1])
+        def rep(node):
+            while node != store[node]:
+                node = store[node]
+                
+            return node
+        
+        def union(x, y):
+            rep_x = rep(x)
+            rep_y = rep(y)
+            
+            if height[rep_x] > height[rep_y]:
+                store[rep_y] = rep_x
+                height[rep_y] = max(height[rep_x] + 1, height[rep_y])
                 
             else:
-                store[edges[i][0]] = [edges[i][1]]
+                store[rep_x] = rep_y
+                height[rep_x] = max(height[rep_y] + 1, height[rep_x])
                 
-            if edges[i][1] in store:
-                store[edges[i][1]].append(edges[i][0])
                 
-            else:
-                store[edges[i][1]] = [edges[i][0]]
-                
-        return self.helper(store, source, destination)
+        def connected(node1, node2):
+            return rep(node1) == rep(node2)
         
-    def helper(self, store, src, dest):
-        stack = [src]
-        
-        while stack:
+        for node1 , node2 in edges:
+            union(node1, node2)
             
-            value = stack.pop()
-            if value == dest:
-                return True
-            
-           
-            temp = store[value]
-            while temp:
-                stack.append(temp.pop())
+        return connected(source, destination)
                 
-        return False
+                
+        
+        
+    def initialize(self, n):
+        store = defaultdict(int)
+        height = defaultdict(int)
+        
+        for i in range(n):
+            store[i] = i
+            height[i] = 1
+            
+        return store, height
+            
+        
