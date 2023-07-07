@@ -1,0 +1,27 @@
+num = int(input())
+
+for i in range(num):
+    num = int(input())
+    arr = list(map(int, input().split()))
+    mx_ = 0
+    pointer = 0
+    
+    while pointer < num:
+        
+        if arr[pointer] < 0:
+            curr_max = float('-inf')
+            
+            while pointer < num and arr[pointer] < 0:
+                curr_max = max(curr_max, arr[pointer])
+                pointer += 1
+            mx_ += curr_max
+            
+        elif arr[pointer] > 0:
+            curr_max = float('-inf')
+            
+            while pointer < num and arr[pointer] > 0:
+                curr_max = max(curr_max, arr[pointer])
+                pointer += 1
+            mx_ += curr_max
+        
+    print(mx_)
