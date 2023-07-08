@@ -1,17 +1,18 @@
 class Solution:
     def mostPoints(self, questions: List[List[int]]) -> int:
-        l=len(questions)
-        store=[0] * (l + 1)
+        dp = [0] * len(questions)
+        pointer = len(questions) - 1
         
-        for i in range(l - 1,-1,-1):
-            store[i]=store[i + 1]
-            
-            r= questions[i][1] + i + 1
-            
-            if r < l:
-                store[i]=max(store[i + 1], questions[i][0] + store[r])
+        for q in questions[::-1]:
+            if q[1] + 1 + pointer < len(questions) :
+                dp[pointer] = max(dp[pointer + 1], q[0] + dp[q[1] + pointer + 1])
+                
+            elif pointer + 1 < len(questions):
+                dp[pointer] = max(q[0], dp[pointer + 1])
                 
             else:
-                store[i]=max(store[i + 1], questions[i][0])
+                dp[pointer] = q[0]
                 
-        return store[0]
+            pointer -= 1
+            
+        return dp[0]
