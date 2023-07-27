@@ -28,12 +28,7 @@ class Solution:
                 for col in range(len(grid[0])):
                     flag = True
                     if grid[row][col] == 1:
-                        # for i, j in direction:
-                        #     nw_r = row + i
-                        #     nw_c = col + j
-
-                            # if inbound(nw_r, nw_c) and grid[nw_r][nw_c] == 1:
-                                # flag = False
+                       
                             visited.add((row, col))
                             temp.append((row, col))
                             dfs(row, col)
@@ -45,19 +40,9 @@ class Solution:
                           
                             break
 
-#                         if flag:
-#                             # visited.add((row, col))
-#                             # temp.append((row, col))
-#                             # dfs(row, col)
-#                             # candidate.append((temp, 0))
-#                             # print(temp)
-#                             # visited.add((row, col))
-#                             # stop = True
 
-#                             break
                         
-        
-        print(temp)
+       
         
         def bfs():
             
@@ -76,7 +61,7 @@ class Solution:
 
                         elif inbound(nw_rw, nw_cl) and (nw_rw, nw_cl) not in visited and grid[nw_rw][nw_cl] == 0:
                             temp1.append((nw_rw, nw_cl))
-                            # candidate.append((nw_rw, nw_cl, no + 1))
+                           
                             visited.add((nw_rw, nw_cl))
                             
                 if temp1:
