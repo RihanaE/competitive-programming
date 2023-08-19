@@ -1,16 +1,9 @@
 class Solution:
     def minimumOperations(self, nums: List[int]) -> int:
-        nums.sort()
-        count = 0
+        visit = set()
         
-        for i in range(len(nums)):
-            
-            if nums[i] != 0:
-                count += 1      
-            
-                for j in range(i + 1, len(nums)):
-             
-                    nums[j] -= nums[i]
-              
-                    
-        return count
+        for i in nums:
+            if i != 0:
+                visit.add(i)
+                
+        return len(visit)
