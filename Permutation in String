@@ -1,0 +1,33 @@
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s2) < len(s1):
+            return False
+        
+        pattern = 0
+        slide = 0
+        
+        for i in range(len(s1)):
+            pattern += (ord(s1[i]) - 96) * 27
+            slide += (ord(s2[i]) - 96) * 27
+            
+        
+        
+        leftPointer, rightPointer = 0, len(s1)
+        
+        while rightPointer < len(s2):
+            if pattern == slide:
+          
+                if set(s1) == set(s2[leftPointer : rightPointer]):
+                    return True
+            
+            slide -= (ord(s2[leftPointer]) - 96) * 27
+            slide += (ord(s2[rightPointer]) - 96) * 27
+            leftPointer += 1
+            rightPointer += 1
+            
+        if pattern == slide:
+            if set(s1) == set(s2[leftPointer : rightPointer + 1]):
+                    return True
+            
+        
+        return False
