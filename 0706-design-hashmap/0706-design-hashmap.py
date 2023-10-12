@@ -1,20 +1,18 @@
 class MyHashMap:
 
     def __init__(self):
-        self.diction = {}
+        self.diction = [None] * ((10 ** 6) + 1)
 
     def put(self, key: int, value: int) -> None:
         self.diction[key] = value
 
     def get(self, key: int) -> int:
-        if key in self.diction:
+        if self.diction[key] != None:
             return self.diction[key]
         return -1
 
     def remove(self, key: int) -> None:
-        if key in self.diction:
-            del(self.diction[key])
-
+        self.diction[key] = None
 
 # Your MyHashMap object will be instantiated and called as such:
 # obj = MyHashMap()
