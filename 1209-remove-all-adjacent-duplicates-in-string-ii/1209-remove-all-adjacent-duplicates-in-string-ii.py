@@ -1,26 +1,31 @@
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
         stack = []
-        res = []
+        diction = defaultdict(int)
+        pointer = 0
         
-        for i in s:
+        while pointer < len(s):
+            
             if not stack:
-                stack.append([i, 1])
-                
+                stack.append([s[pointer], 1])
+            
             else:
-                if stack[-1][0] == i:
-                    count = stack[-1][1] + 1
-                    stack.append([i, count])
+                if stack[-1][0] == s[pointer]:
+                    stack.append([s[pointer], stack[-1][1] + 1])
                     
                 else:
-                    stack.append([i, 1])
+                    stack.append([s[pointer], 1])
                     
             if stack[-1][1] == k:
                 for i in range(k):
                     stack.pop()
                     
-        for letter, count in stack:
-            res.append(letter)
+            pointer += 1
             
-        ans = "".join(res)
-        return ans
+            
+        res = ""
+        
+        for val, cnt in stack:
+            res += val
+            
+        return res
