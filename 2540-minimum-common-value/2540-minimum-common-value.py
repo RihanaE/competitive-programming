@@ -1,16 +1,16 @@
 class Solution:
     def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
-        leftPointer = 0
-        rightPointer = 0
+        pointer1 = 0
+        pointer2 = 0
         
-        while leftPointer < len(nums1) and rightPointer < len(nums2):
-            if nums1[leftPointer] == nums2[rightPointer]:
-                return nums1[leftPointer]
-            
-            elif nums1[leftPointer] > nums2[rightPointer]:
-                rightPointer += 1
+        while len(nums1) > pointer1 and len(nums2) > pointer2:
+            if nums1[pointer1] < nums2[pointer2]:
+                pointer1 += 1
+                
+            elif nums1[pointer1] > nums2[pointer2]:
+                pointer2 += 1
                 
             else:
-                leftPointer += 1
-                
+                return nums1[pointer1]
+            
         return -1
