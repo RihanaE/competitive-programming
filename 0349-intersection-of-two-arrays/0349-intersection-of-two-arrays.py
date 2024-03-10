@@ -1,25 +1,22 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        ans = set()
+        pointer1 = 0
+        pointer2 = 0 
+        
         nums1.sort()
         nums2.sort()
-        res = []
-        leftPointer = 0
-        rightPointer = 0
         
-        while leftPointer < len(nums1) and rightPointer < len(nums2):
-            if nums1[leftPointer] == nums2[rightPointer] and nums1[leftPointer] not in res:
-                res.append(nums1[leftPointer])
-                leftPointer += 1
-                rightPointer += 1
+        while pointer1 < len(nums1) and pointer2 < len(nums2):
+            if nums1[pointer1] < nums2[pointer2]:
+                pointer1 += 1
                 
-            elif nums1[leftPointer] == nums2[rightPointer]:
-                leftPointer += 1
-                rightPointer += 1
+            elif nums1[pointer1] > nums2[pointer2]:
+                pointer2 += 1
                 
-            elif  nums1[leftPointer] < nums2[rightPointer]:
-                leftPointer += 1
+            else:
+                ans.add(nums1[pointer1])
+                pointer1 += 1
+                pointer2 += 1
                 
-            elif nums1[leftPointer] > nums2[rightPointer]:
-                rightPointer += 1
-                
-        return res
+        return list(ans)
