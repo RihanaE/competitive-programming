@@ -1,16 +1,22 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        diction = defaultdict(str)
-        
         if len(s) != len(t):
             return False
         
-        for i in range(len(t)):
-            if t[i] not in diction and s[i] not in diction.values():
-                diction[t[i]] = s[i]
+        sMap = {}
+        tMap = {}
+        
+        
+        for i in range(len(s)):
+            if s[i] not in sMap and t[i] not in tMap:
+                sMap[s[i]] = t[i]
+                tMap[t[i]] = s[i]
                 
             else:
-                if (diction[t[i]] != s[i]) or (t[i] not in diction and s[i] in diction.values()):
+                if s[i] not in sMap or t[i] not in tMap:
                     return False
                 
+                elif sMap[s[i]] != t[i] or tMap[t[i]] != s[i]:
+                    return False
+            
         return True
