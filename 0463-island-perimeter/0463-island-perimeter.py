@@ -1,44 +1,44 @@
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
-        dir_ = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+        queue = deque()
         visited = set()
-        res = 0
         flag = False
+        dir_ = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+        ans = 0
         
         def isBound(row, col):
             return 0 <= row < len(grid) and 0 <= col < len(grid[0])
         
         def count(row, col):
-            num = 4
-            
+            res = 4
             for rw, cl in dir_:
-                nw_rw, nw_cl = rw + row, cl + col
+                nw_rw, nw_cl = row + rw, col + cl
+                
                 if isBound(nw_rw, nw_cl) and grid[nw_rw][nw_cl] == 1:
-                    num -= 1
-                    
-            return num
+                    res -= 1
+                
+            return res
         
-        for rw in range(len(grid)):
-            for cl in range(len(grid[0])):
-                if grid[rw][cl] == 1:
-                    stack = [[rw, cl]]
-                    visited.add((rw, cl))
+        for row in range(len(grid)):
+            for col in range(len(grid[0])):
+                if grid[row][col] == 1:
+                    queue.append([row, col])
+                    visited.add((row, col))
                     flag = True
                     break
                     
             if flag:
                 break
                 
-       
-        while stack:
-            row, col = stack.pop()
-            res += count(row, col)
+ 
+        while queue:
+            row, col = queue.popleft()
+            ans += count(row, col)
             
-            for i, j in dir_:
-                nw_row, nw_col = row + i, col + j
+            for rw, cl in dir_:
+                nw_rw, nw_cl = rw + row, col + cl
                 
-                if (nw_row, nw_col) not in visited and isBound(nw_row, nw_col) and grid[nw_row][nw_col] == 1:
-                    stack.append([nw_row, nw_col])
-                    visited.add((nw_row, nw_col))
-                    
-        return res
+                if isBound(nw_rw, nw_cl) and (nw_rw, nw_cl) not in visited and grid[nw_rw][nw_cl] == 1:
+                    queue.append([nw_rw, nw_cl])
+                    visited.add((nw_rw, nw_cl))
+        return ans
