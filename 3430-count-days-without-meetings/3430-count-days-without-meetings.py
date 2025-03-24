@@ -2,7 +2,6 @@ class Solution:
     def countDays(self, days: int, meetings: List[List[int]]) -> int:
         meetings.sort()
         interval = 0
-        print(meetings)
         mn = float("inf")
         mx = -float("inf")
 
