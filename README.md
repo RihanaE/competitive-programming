@@ -33,6 +33,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RihanaE/competitive-programming/tree/master/2308-divide-array-into-equal-pairs) |
@@ -53,6 +54,7 @@
 ## String
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/RihanaE/competitive-programming/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
@@ -130,6 +132,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 ## Breadth-First Search
 |  |
@@ -146,6 +149,7 @@
 ## Greedy
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
 ## Monotonic Stack
 |  |
