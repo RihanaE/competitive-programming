@@ -34,6 +34,7 @@
 | [3430-count-days-without-meetings](https://github.com/RihanaE/competitive-programming/tree/master/3430-count-days-without-meetings) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RihanaE/competitive-programming/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3483-alternating-groups-ii](https://github.com/RihanaE/competitive-programming/tree/master/3483-alternating-groups-ii) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/RihanaE/competitive-programming/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3643-zero-array-transformation-ii](https://github.com/RihanaE/competitive-programming/tree/master/3643-zero-array-transformation-ii) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/RihanaE/competitive-programming/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 ## Hash Table
@@ -127,6 +128,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/RihanaE/competitive-programming/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2262-solving-questions-with-brainpower](https://github.com/RihanaE/competitive-programming/tree/master/2262-solving-questions-with-brainpower) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/RihanaE/competitive-programming/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 ## Shortest Path
 |  |
 | ------- |
