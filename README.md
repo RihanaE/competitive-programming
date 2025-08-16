@@ -4,6 +4,7 @@
 ## Math
 |  |
 | ------- |
+| [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/RihanaE/competitive-programming/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2610-closest-prime-numbers-in-range](https://github.com/RihanaE/competitive-programming/tree/master/2610-closest-prime-numbers-in-range) |
@@ -169,6 +170,7 @@
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
+| [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [2681-put-marbles-in-bags](https://github.com/RihanaE/competitive-programming/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
 ## Monotonic Stack
