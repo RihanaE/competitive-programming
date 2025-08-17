@@ -4,6 +4,7 @@
 ## Math
 |  |
 | ------- |
+| [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
 | [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/RihanaE/competitive-programming/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -75,6 +76,7 @@
 ## Sliding Window
 |  |
 | ------- |
+| [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/RihanaE/competitive-programming/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2478-longest-nice-subarray](https://github.com/RihanaE/competitive-programming/tree/master/2478-longest-nice-subarray) |
@@ -129,6 +131,7 @@
 |  |
 | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
+| [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/RihanaE/competitive-programming/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2262-solving-questions-with-brainpower](https://github.com/RihanaE/competitive-programming/tree/master/2262-solving-questions-with-brainpower) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/RihanaE/competitive-programming/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
@@ -194,4 +197,8 @@
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
+## Probability and Statistics
+|  |
+| ------- |
+| [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
 <!---LeetCode Topics End-->
