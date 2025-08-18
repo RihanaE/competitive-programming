@@ -4,6 +4,7 @@
 ## Math
 |  |
 | ------- |
+| [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
 | [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/RihanaE/competitive-programming/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
@@ -17,6 +18,7 @@
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
+| [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RihanaE/competitive-programming/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -201,4 +203,8 @@
 |  |
 | ------- |
 | [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
+## Backtracking
+|  |
+| ------- |
+| [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 <!---LeetCode Topics End-->
