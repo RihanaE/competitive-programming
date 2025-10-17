@@ -69,6 +69,7 @@
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
+| [0125-valid-palindrome](https://github.com/RihanaE/competitive-programming/tree/master/0125-valid-palindrome) |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -154,6 +155,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/RihanaE/competitive-programming/tree/master/0125-valid-palindrome) |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 ## Breadth-First Search
