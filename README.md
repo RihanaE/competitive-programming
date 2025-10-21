@@ -26,6 +26,7 @@
 | [2262-solving-questions-with-brainpower](https://github.com/RihanaE/competitive-programming/tree/master/2262-solving-questions-with-brainpower) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RihanaE/competitive-programming/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/RihanaE/competitive-programming/tree/master/2478-longest-nice-subarray) |
+| [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/RihanaE/competitive-programming/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2665-minimum-time-to-repair-cars](https://github.com/RihanaE/competitive-programming/tree/master/2665-minimum-time-to-repair-cars) |
@@ -58,6 +59,7 @@
 | ------- |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [3227-find-missing-and-repeated-values](https://github.com/RihanaE/competitive-programming/tree/master/3227-find-missing-and-repeated-values) |
 ## Number Theory
@@ -101,6 +103,7 @@
 ## Prefix Sum
 |  |
 | ------- |
+| [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RihanaE/competitive-programming/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3643-zero-array-transformation-ii](https://github.com/RihanaE/competitive-programming/tree/master/3643-zero-array-transformation-ii) |
 ## Bit Manipulation
