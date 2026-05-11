@@ -27,6 +27,7 @@
 | [2308-divide-array-into-equal-pairs](https://github.com/RihanaE/competitive-programming/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/RihanaE/competitive-programming/tree/master/2478-longest-nice-subarray) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
+| [2553-separate-the-digits-in-an-array](https://github.com/RihanaE/competitive-programming/tree/master/2553-separate-the-digits-in-an-array) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/RihanaE/competitive-programming/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2665-minimum-time-to-repair-cars](https://github.com/RihanaE/competitive-programming/tree/master/2665-minimum-time-to-repair-cars) |
@@ -212,4 +213,8 @@
 |  |
 | ------- |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
+## Simulation
+|  |
+| ------- |
+| [2553-separate-the-digits-in-an-array](https://github.com/RihanaE/competitive-programming/tree/master/2553-separate-the-digits-in-an-array) |
 <!---LeetCode Topics End-->
