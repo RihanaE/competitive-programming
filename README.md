@@ -4,6 +4,7 @@
 ## Math
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/RihanaE/competitive-programming/tree/master/0050-powx-n) |
 | [0509-fibonacci-number](https://github.com/RihanaE/competitive-programming/tree/master/0509-fibonacci-number) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
@@ -222,6 +223,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/RihanaE/competitive-programming/tree/master/0050-powx-n) |
 | [0509-fibonacci-number](https://github.com/RihanaE/competitive-programming/tree/master/0509-fibonacci-number) |
 ## Memoization
 |  |
