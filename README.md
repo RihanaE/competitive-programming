@@ -22,6 +22,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
+| [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RihanaE/competitive-programming/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -152,6 +153,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2681-put-marbles-in-bags](https://github.com/RihanaE/competitive-programming/tree/master/2681-put-marbles-in-bags) |
@@ -164,6 +166,7 @@
 | ------- |
 | [0125-valid-palindrome](https://github.com/RihanaE/competitive-programming/tree/master/0125-valid-palindrome) |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
+| [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/RihanaE/competitive-programming/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 ## Breadth-First Search
 |  |
@@ -184,6 +187,7 @@
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
+| [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [2681-put-marbles-in-bags](https://github.com/RihanaE/competitive-programming/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
