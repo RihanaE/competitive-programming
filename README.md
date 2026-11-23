@@ -8,6 +8,7 @@
 | [0509-fibonacci-number](https://github.com/RihanaE/competitive-programming/tree/master/0509-fibonacci-number) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0867-new-21-game](https://github.com/RihanaE/competitive-programming/tree/master/0867-new-21-game) |
+| [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
 | [1448-maximum-69-number](https://github.com/RihanaE/competitive-programming/tree/master/1448-maximum-69-number) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/RihanaE/competitive-programming/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -26,6 +27,7 @@
 | [0944-delete-columns-to-make-sorted](https://github.com/RihanaE/competitive-programming/tree/master/0944-delete-columns-to-make-sorted) |
 | [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RihanaE/competitive-programming/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2262-solving-questions-with-brainpower](https://github.com/RihanaE/competitive-programming/tree/master/2262-solving-questions-with-brainpower) |
@@ -112,6 +114,7 @@
 ## Prefix Sum
 |  |
 | ------- |
+| [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RihanaE/competitive-programming/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3643-zero-array-transformation-ii](https://github.com/RihanaE/competitive-programming/tree/master/3643-zero-array-transformation-ii) |
@@ -242,4 +245,12 @@
 |  |
 | ------- |
 | [0944-delete-columns-to-make-sorted](https://github.com/RihanaE/competitive-programming/tree/master/0944-delete-columns-to-make-sorted) |
+## Design
+|  |
+| ------- |
+| [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
+## Data Stream
+|  |
+| ------- |
+| [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
 <!---LeetCode Topics End-->
