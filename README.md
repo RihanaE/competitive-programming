@@ -23,6 +23,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
+| [0944-delete-columns-to-make-sorted](https://github.com/RihanaE/competitive-programming/tree/master/0944-delete-columns-to-make-sorted) |
 | [0969-pancake-sorting](https://github.com/RihanaE/competitive-programming/tree/master/0969-pancake-sorting) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RihanaE/competitive-programming/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -79,6 +80,7 @@
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
 | [0125-valid-palindrome](https://github.com/RihanaE/competitive-programming/tree/master/0125-valid-palindrome) |
 | [0768-partition-labels](https://github.com/RihanaE/competitive-programming/tree/master/0768-partition-labels) |
+| [0944-delete-columns-to-make-sorted](https://github.com/RihanaE/competitive-programming/tree/master/0944-delete-columns-to-make-sorted) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/RihanaE/competitive-programming/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/RihanaE/competitive-programming/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
@@ -236,4 +238,8 @@
 |  |
 | ------- |
 | [0509-fibonacci-number](https://github.com/RihanaE/competitive-programming/tree/master/0509-fibonacci-number) |
+## Longest Increasing Subsequence
+|  |
+| ------- |
+| [0944-delete-columns-to-make-sorted](https://github.com/RihanaE/competitive-programming/tree/master/0944-delete-columns-to-make-sorted) |
 <!---LeetCode Topics End-->
