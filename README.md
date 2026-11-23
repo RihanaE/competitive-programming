@@ -19,6 +19,7 @@
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
+| [0074-search-a-2d-matrix](https://github.com/RihanaE/competitive-programming/tree/master/0074-search-a-2d-matrix) |
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
@@ -61,6 +62,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/RihanaE/competitive-programming/tree/master/0074-search-a-2d-matrix) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/RihanaE/competitive-programming/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2508-maximum-sum-of-an-hourglass](https://github.com/RihanaE/competitive-programming/tree/master/2508-maximum-sum-of-an-hourglass) |
@@ -95,6 +97,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/RihanaE/competitive-programming/tree/master/0074-search-a-2d-matrix) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RihanaE/competitive-programming/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/RihanaE/competitive-programming/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2665-minimum-time-to-repair-cars](https://github.com/RihanaE/competitive-programming/tree/master/2665-minimum-time-to-repair-cars) |
