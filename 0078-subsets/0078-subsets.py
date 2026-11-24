@@ -1,17 +1,14 @@
 class Solution:
-    def subsets(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        
-        def helper(nums, pointer, lst):
-            nonlocal res
-            
+    def subsets(self, nums: list[int]) -> list[list[int]]:
+        ans = []
+
+        def helper(res, pointer):
             if pointer >= len(nums):
-                res.append(lst[:])
-                
+                ans.append(res)
                 return
-            
-            helper(nums, pointer + 1, lst + [nums[pointer]])
-            helper(nums, pointer + 1, lst)
-            
-        helper(nums, 0, [])
-        return res
+
+            helper(res + [nums[pointer]], pointer + 1)
+            helper(res, pointer + 1)
+
+        helper([], 0)
+        return ans
