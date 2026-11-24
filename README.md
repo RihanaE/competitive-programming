@@ -21,6 +21,7 @@
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
 | [0074-search-a-2d-matrix](https://github.com/RihanaE/competitive-programming/tree/master/0074-search-a-2d-matrix) |
+| [0078-subsets](https://github.com/RihanaE/competitive-programming/tree/master/0078-subsets) |
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 | [0733-flood-fill](https://github.com/RihanaE/competitive-programming/tree/master/0733-flood-fill) |
@@ -121,6 +122,7 @@
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/RihanaE/competitive-programming/tree/master/0078-subsets) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RihanaE/competitive-programming/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/RihanaE/competitive-programming/tree/master/2478-longest-nice-subarray) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/RihanaE/competitive-programming/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
@@ -227,6 +229,7 @@
 ## Backtracking
 |  |
 | ------- |
+| [0078-subsets](https://github.com/RihanaE/competitive-programming/tree/master/0078-subsets) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 ## Simulation
 |  |
