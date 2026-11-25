@@ -16,6 +16,7 @@
 | [2649-count-total-number-of-colored-cells](https://github.com/RihanaE/competitive-programming/tree/master/2649-count-total-number-of-colored-cells) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
 | [3227-find-missing-and-repeated-values](https://github.com/RihanaE/competitive-programming/tree/master/3227-find-missing-and-repeated-values) |
+| [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Array
 |  |
 | ------- |
@@ -46,6 +47,7 @@
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/RihanaE/competitive-programming/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3227-find-missing-and-repeated-values](https://github.com/RihanaE/competitive-programming/tree/master/3227-find-missing-and-repeated-values) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/RihanaE/competitive-programming/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 | [3430-count-days-without-meetings](https://github.com/RihanaE/competitive-programming/tree/master/3430-count-days-without-meetings) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RihanaE/competitive-programming/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3483-alternating-groups-ii](https://github.com/RihanaE/competitive-programming/tree/master/3483-alternating-groups-ii) |
@@ -77,6 +79,7 @@
 | ------- |
 | [2610-closest-prime-numbers-in-range](https://github.com/RihanaE/competitive-programming/tree/master/2610-closest-prime-numbers-in-range) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
+| [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 ## String
 |  |
 | ------- |
@@ -96,6 +99,7 @@
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RihanaE/competitive-programming/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/RihanaE/competitive-programming/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2478-longest-nice-subarray](https://github.com/RihanaE/competitive-programming/tree/master/2478-longest-nice-subarray) |
+| [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RihanaE/competitive-programming/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3483-alternating-groups-ii](https://github.com/RihanaE/competitive-programming/tree/master/3483-alternating-groups-ii) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/RihanaE/competitive-programming/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
@@ -256,4 +260,8 @@
 |  |
 | ------- |
 | [1352-product-of-the-last-k-numbers](https://github.com/RihanaE/competitive-programming/tree/master/1352-product-of-the-last-k-numbers) |
+## Enumeration
+|  |
+| ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 <!---LeetCode Topics End-->
