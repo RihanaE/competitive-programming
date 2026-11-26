@@ -16,6 +16,7 @@
 | [2649-count-total-number-of-colored-cells](https://github.com/RihanaE/competitive-programming/tree/master/2649-count-total-number-of-colored-cells) |
 | [3001-apply-operations-to-maximize-score](https://github.com/RihanaE/competitive-programming/tree/master/3001-apply-operations-to-maximize-score) |
 | [3227-find-missing-and-repeated-values](https://github.com/RihanaE/competitive-programming/tree/master/3227-find-missing-and-repeated-values) |
+| [3360-stone-removal-game](https://github.com/RihanaE/competitive-programming/tree/master/3360-stone-removal-game) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/RihanaE/competitive-programming/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Array
 |  |
@@ -239,6 +240,7 @@
 |  |
 | ------- |
 | [2553-separate-the-digits-in-an-array](https://github.com/RihanaE/competitive-programming/tree/master/2553-separate-the-digits-in-an-array) |
+| [3360-stone-removal-game](https://github.com/RihanaE/competitive-programming/tree/master/3360-stone-removal-game) |
 ## Recursion
 |  |
 | ------- |
