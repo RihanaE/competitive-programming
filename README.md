@@ -22,6 +22,7 @@
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/RihanaE/competitive-programming/tree/master/0014-longest-common-prefix) |
+| [0046-permutations](https://github.com/RihanaE/competitive-programming/tree/master/0046-permutations) |
 | [0074-search-a-2d-matrix](https://github.com/RihanaE/competitive-programming/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/RihanaE/competitive-programming/tree/master/0078-subsets) |
 | [0416-partition-equal-subset-sum](https://github.com/RihanaE/competitive-programming/tree/master/0416-partition-equal-subset-sum) |
@@ -234,6 +235,7 @@
 ## Backtracking
 |  |
 | ------- |
+| [0046-permutations](https://github.com/RihanaE/competitive-programming/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/RihanaE/competitive-programming/tree/master/0078-subsets) |
 | [0679-24-game](https://github.com/RihanaE/competitive-programming/tree/master/0679-24-game) |
 ## Simulation
